@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Saves } from './resources/saves'
 import { Classes } from './resources/classes'
 import { SpellsSlots } from './resources/spells'
+import { Skills } from './resources/skills'
 
 export class MetaDataService {
     

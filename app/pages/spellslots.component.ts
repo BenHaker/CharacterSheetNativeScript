@@ -14,31 +14,31 @@ import { ToolbarComponent, CharacterTab } from './toolbar.component';
                     <Label text="Used" row="0" col="2" class="body p-r-5"></Label>
                     <Label text="1" row="1" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(1)" row="1" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed1" row="1" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells1" row="1" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="2" row="2" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(2)" row="2" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed2" row="2" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells2" row="2" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="3" row="3" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(3)" row="3" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed3" row="3" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells3" row="3" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="4" row="4" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(4)" row="4" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed4" row="4" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells4" row="4" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="5" row="5" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(5)" row="5" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed5" row="5" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells5" row="5" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="6" row="6" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(6)" row="6" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed6" row="6" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells6" row="6" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="7" row="7" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(7)" row="7" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed7" row="7" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells7" row="7" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="8" row="8" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(8)" row="8" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed8" row="8" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells8" row="8" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                     <Label text="9" row="9" col="0" style="text-align: center;"></Label>
                     <Label [text]="logic.getSpellSlots(9)" row="9" col="1" style="text-align: center;"></Label>
-                    <TextField [(ngModel)]="character.spellsUsed9" row="9" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
+                    <TextField [(ngModel)]="character.spellslots.spells9" row="9" col="2" keyboardType="number" class="input botton_border" style="text-align: center;"></TextField>
                 </GridLayout>
                 </ScrollView>
                 </GridLayout>`

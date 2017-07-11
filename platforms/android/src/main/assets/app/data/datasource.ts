@@ -79,6 +79,10 @@ export class DataService {
         if(character != null) {
             if(character.treasure == null)
                 character.treasure = new Treasure();
+            if(character.spellbook == null)
+                character.spellbook = new Spellbook();
+            if(character.spellslots == null)
+                character.spellslots = new Spellslots();
         }
     }
 
@@ -109,6 +113,8 @@ export class Character {
         this.ac = 9;
         this.weapons = new Array<Weapon>();
         this.treasure = new Treasure();
+        this.spellbook = new Spellbook();
+        this.spellslots = new Spellslots();
     }
 
     id: number;
@@ -130,6 +136,12 @@ export class Character {
     regularEquipment: string;
     journal: string;
     notes: string;
+    spellbook: Spellbook;
+    spellslots: Spellslots;
+    treasure: Treasure;
+}
+
+export class Spellbook {
     spells1: string;
     spells2: string;
     spells3: string;
@@ -139,16 +151,18 @@ export class Character {
     spells7: string;
     spells8: string;
     spells9: string;
-    spellsUsed1: number;
-    spellsUsed2: number;
-    spellsUsed3: number;
-    spellsUsed4: number;
-    spellsUsed5: number;
-    spellsUsed6: number;
-    spellsUsed7: number;
-    spellsUsed8: number;
-    spellsUsed9: number;
-    treasure: Treasure;
+}
+
+export class Spellslots {
+    spells1: string;
+    spells2: string;
+    spells3: string;
+    spells4: string;
+    spells5: string;
+    spells6: string;
+    spells7: string;
+    spells8: string;
+    spells9: string;
 }
 
 export class Treasure {

@@ -12,23 +12,23 @@ import { ToolbarComponent, CharacterTab } from './toolbar.component';
                     <Label text="Level" row="0" col="0"></Label>
                     <Label text="Spells" row="0" col="1" style="text-align:center;"></Label>
                     <Label text="1" row="1" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells1" row="1" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells1" row="1" col="1"></TextView>
                     <Label text="2" row="2" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells2" row="2" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells2" row="2" col="1"></TextView>
                     <Label text="3" row="3" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells3" row="3" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells3" row="3" col="1"></TextView>
                     <Label text="4" row="4" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells4" row="4" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells4" row="4" col="1"></TextView>
                     <Label text="5" row="5" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells5" row="5" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells5" row="5" col="1"></TextView>
                     <Label text="6" row="6" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells6" row="6" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells6" row="6" col="1"></TextView>
                     <Label text="7" row="7" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells7" row="7" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells7" row="7" col="1"></TextView>
                     <Label text="8" row="8" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells8" row="8" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells8" row="8" col="1"></TextView>
                     <Label text="9" row="9" col="0"></Label>
-                    <TextView [(ngModel)]="character.spells9" row="9" col="1"></TextView>
+                    <TextView [(ngModel)]="character.spellbook.spells9" row="9" col="1"></TextView>
                 </GridLayout>
                 </ScrollView>
                 </GridLayout>`
