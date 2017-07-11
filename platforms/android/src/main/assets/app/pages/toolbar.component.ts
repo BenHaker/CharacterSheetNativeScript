@@ -99,6 +99,12 @@ export class ToolbarComponent {
             case CharacterTab.Notes:
                 this.router.navigate(["notes"]);
                 break;
+            case CharacterTab.Equipment:
+                this.router.navigate(["equipment"]);
+                break;
+            case CharacterTab.Treasure:
+                this.router.navigate(["treasure"]);
+                break;
         }
     }
 }

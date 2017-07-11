@@ -6,6 +6,8 @@ import { SavesComponent } from "./pages/saves.component";
 import { SpellbookComponent } from "./pages/spellbook.component";
 import { SpellslotsComponent } from "./pages/spellslots.component";
 import { NotesComponent } from "./pages/notes.component";
+import { EquipmentComponent } from "./pages/equipment.component";
+import { TreasureComponent } from "./pages/treasure.component";
 
 export const routes = [
   { path: "", component: CharacterListComponent },
@@ -16,6 +18,8 @@ export const routes = [
   { path: "spellbook", component: SpellbookComponent },
   { path: "spellslots", component: SpellslotsComponent },
   { path: "notes", component: NotesComponent },
+  { path: "equipment", component: EquipmentComponent },
+  { path: "treasure", component: TreasureComponent },
 ];
 
 export const navigatableComponents = [
@@ -26,5 +30,7 @@ export const navigatableComponents = [
   SavesComponent,
   SpellbookComponent,
   SpellslotsComponent,
-  NotesComponent
+  NotesComponent,
+  EquipmentComponent,
+  TreasureComponent
 ];

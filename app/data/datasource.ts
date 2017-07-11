@@ -49,7 +49,10 @@ export class DataService {
     }
 
     getSelectedCharacter = (): Character => {
-        return this.characters.filter(((character) => character.id == this.selectedId), this.selectedId)[0];
+        let character: Character = this.characters.filter(((character) => character.id == this.selectedId), this.selectedId)[0];
+
+        this.validateCharacter(character);
+        return character;
     }
 
     findNextId = (): number => {
@@ -66,7 +69,17 @@ export class DataService {
     }
 
     getCharacter = (id: number): Character => {
-        return this.characters.find((character) => character.id == id);
+        let character: Character = this.characters.find((character) => character.id == id);
+
+        this.validateCharacter(character);
+        return character;
+    }
+
+    validateCharacter = (character: Character) => {
+        if(character != null) {
+            if(character.treasure == null)
+                character.treasure = new Treasure();
+        }
     }
 
     addCharacter = (): void => {
@@ -95,6 +108,7 @@ export class Character {
         this.charisma = 3;
         this.ac = 9;
         this.weapons = new Array<Weapon>();
+        this.treasure = new Treasure();
     }
 
     id: number;
@@ -112,6 +126,38 @@ export class Character {
     charisma: number;
     ac: number;
     weapons: Weapon[];
+    magicEquipment: string;
+    regularEquipment: string;
+    journal: string;
+    notes: string;
+    spells1: string;
+    spells2: string;
+    spells3: string;
+    spells4: string;
+    spells5: string;
+    spells6: string;
+    spells7: string;
+    spells8: string;
+    spells9: string;
+    spellsUsed1: number;
+    spellsUsed2: number;
+    spellsUsed3: number;
+    spellsUsed4: number;
+    spellsUsed5: number;
+    spellsUsed6: number;
+    spellsUsed7: number;
+    spellsUsed8: number;
+    spellsUsed9: number;
+    treasure: Treasure;
+}
+
+export class Treasure {
+    pp: number;
+    gp: number;
+    ep: number;
+    sp: number;
+    cp: number;
+    items: string;
 }
 
 export class Weapon {
