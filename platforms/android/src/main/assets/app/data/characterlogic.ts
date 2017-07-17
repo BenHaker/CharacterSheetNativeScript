@@ -1,5 +1,5 @@
 import { Character } from './datasource';
-import { Class, SaveType, MetaDataService } from './metadatasource';
+import { Class, SaveType, MetaDataService, Ability } from './metadatasource';
 
 export class CharacterLogic {
     private character: Character;
@@ -108,5 +108,9 @@ export class CharacterLogic {
 
     getSpellSlots = (spellLevel: number): number => {
         return MetaDataService.getSpellSlots(this.character.class, this.character.level, spellLevel);
+    }
+
+    getAbilities = (): Ability[] => {
+        return MetaDataService.getAbilities(this.character.class, this.character.level);
     }
 }

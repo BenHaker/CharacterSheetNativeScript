@@ -18,7 +18,7 @@ import { TabView } from "ui/tab-view";
                     <ActionItem (tap)="navigate(treasureTab)" text="Treasure" android.position="popup" visibility="{{ currentLocation == treasureTab ? 'collapse' : 'visible' }}"></ActionItem>
                     <ActionItem (tap)="navigate(spellbookTab)" text="Spell Book" android.position="popup" visibility="{{ currentLocation == spellbookTab ? 'collapse' : 'visible' }}"></ActionItem>
                     <ActionItem (tap)="navigate(spellslotsTab)" text="Spell Slots" android.position="popup" visibility="{{ currentLocation == spellslotsTab ? 'collapse' : 'visible' }}"></ActionItem>
-                    <ActionItem (tap)="navigate(skillsTab)" text="Skills" android.position="popup" visibility="{{ currentLocation == skillsTab ? 'collapse' : 'visible' }}"></ActionItem>
+                    <ActionItem (tap)="navigate(abilitiesTab)" text="Abilities" android.position="popup" visibility="{{ currentLocation == abilitiesTab ? 'collapse' : 'visible' }}"></ActionItem>
                     <ActionItem (tap)="navigate(notesTab)" text="Notes & Journal" android.position="popup" visibility="{{ currentLocation == notesTab ? 'collapse' : 'visible' }}"></ActionItem>
                 </ActionBar>
                 <TabView class="tab-view" [selectedIndex]="currentLocation" (selectedIndexChange)="onIndexChanged($event)" selectedColor="#FF0000" iosIconRenderingMode="alwaysOriginal" sdkExampleTitle sdkToggleNavButton>
@@ -30,7 +30,7 @@ import { TabView } from "ui/tab-view";
                     <StackLayout *tabItem="{title: 'Treasure'}"></StackLayout>
                     <StackLayout *tabItem="{title: 'Spell Book'}"></StackLayout>
                     <StackLayout *tabItem="{title: 'Spell Slots'}"></StackLayout>
-                    <StackLayout *tabItem="{title: 'Skills'}"></StackLayout>
+                    <StackLayout *tabItem="{title: 'Abilities'}"></StackLayout>
                     <StackLayout *tabItem="{title: 'Notes & Journal'}"></StackLayout>
                 </TabView>`
 })
@@ -47,7 +47,7 @@ export class ToolbarComponent {
     private treasureTab = CharacterTab.Treasure;
     private spellbookTab = CharacterTab.Spellbook;
     private spellslotsTab = CharacterTab.SpellSlots;
-    private skillsTab = CharacterTab.Skills;
+    private abilitiesTab = CharacterTab.Abilities;
     private notesTab = CharacterTab.Notes;
 
     ngOnInit(): void {
@@ -105,6 +105,9 @@ export class ToolbarComponent {
             case CharacterTab.Treasure:
                 this.router.navigate(["treasure"]);
                 break;
+            case CharacterTab.Abilities:
+                this.router.navigate(["abilities"]);
+                break;
         }
     }
 }
@@ -118,6 +121,6 @@ export enum CharacterTab {
     Treasure,
     Spellbook,
     SpellSlots,
-    Skills,
+    Abilities,
     Notes
 }

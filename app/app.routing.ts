@@ -8,6 +8,7 @@ import { SpellslotsComponent } from "./pages/spellslots.component";
 import { NotesComponent } from "./pages/notes.component";
 import { EquipmentComponent } from "./pages/equipment.component";
 import { TreasureComponent } from "./pages/treasure.component";
+import { AbilitiesComponent } from "./pages/abilities.component";
 
 export const routes = [
   { path: "", component: CharacterListComponent },
@@ -20,6 +21,7 @@ export const routes = [
   { path: "notes", component: NotesComponent },
   { path: "equipment", component: EquipmentComponent },
   { path: "treasure", component: TreasureComponent },
+  { path: "abilities", component: AbilitiesComponent },
 ];
 
 export const navigatableComponents = [
@@ -32,5 +34,6 @@ export const navigatableComponents = [
   SpellslotsComponent,
   NotesComponent,
   EquipmentComponent,
-  TreasureComponent
+  TreasureComponent,
+  AbilitiesComponent
 ];
