@@ -67,8 +67,10 @@ export class ToolbarComponent {
         let name: string = this.character.characterName;
         confirm("Are you sure you want to delete " + name  + ". Once deleted " + name + " will be lost. Continue?")
                 .then(result => {
-                    if(result == true)
+                    if(result == true) {
                         this.dataService.deleteCharacter(this.character.id);
+                        this.back();
+                    }
                 });
     }
 

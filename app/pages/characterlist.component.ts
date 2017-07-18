@@ -40,12 +40,17 @@ export class CharacterListComponent implements OnInit {
     }
 
     public onItemTap(args) {
-        this.dataService.setSelectedCharacter(this.characters[args.index].id);
-        this.router.navigate(["/character"]);
+        this.selectCharacter(args.index);
     }
 
     newCharacter = () => {
         this.dataService.addCharacter();
         this.characters = this.dataService.getCharacters();
+        this.selectCharacter(this.characters.length - 1);
+    }
+
+    selectCharacter = (index: number) => {
+        this.dataService.setSelectedCharacter(this.characters[index].id);
+        this.router.navigate(["/character"]);
     }
 }

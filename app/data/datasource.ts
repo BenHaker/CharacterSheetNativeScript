@@ -94,6 +94,7 @@ export class DataService {
     deleteCharacter = (id): void => {
         let index = this.characters.findIndex((character) => character.id == id);
         this.characters.splice(index, 1);
+        this.saveData();
     }
 }
 
@@ -102,6 +103,7 @@ export class Character {
         this.id = id;
         this.playerName = "New Player";
         this.characterName = "New Character";
+        this.class = Class.Cleric;
         this.level = 1;
         this.xp = 0;
         this.strength = 3;

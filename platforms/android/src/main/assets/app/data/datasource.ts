@@ -94,6 +94,8 @@ export class DataService {
     deleteCharacter = (id): void => {
         let index = this.characters.findIndex((character) => character.id == id);
         this.characters.splice(index, 1);
+        console.log(this.characters);
+        this.saveData();
     }
 }
 
