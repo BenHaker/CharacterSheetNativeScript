@@ -47,7 +47,7 @@ export class CharacterComponent {
         this.logic = new CharacterLogic(this.character);
         tmp = this.logic.getClasses()[this.character.class];
         if(tmp == null || tmp == 'undefined')
-            this.characterClass = "";
+            this.characterClass = "Select Class";
         else
             this.characterClass = tmp;
         this.maxLevel = this.logic.getMaxLevel();
